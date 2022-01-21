@@ -1,0 +1,66 @@
+body{
+    background-color: white;
+    color:#1c2833;
+    font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+    font-size: larger;
+    line-height: 1.5;
+    margin: 0;
+}
+code {
+    background: #f8f8f8;
+    border: 1px dotted silver;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+#contents {
+    max-width: 60em;
+    margin: auto;
+    padding: 0 1em;
+}
+figcaption {
+    padding-left: 0.5em;
+    font-size: small;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #f8f8f8;
+    border: 1px;
+}
+figure {
+    margin: auto 0;
+}
+figure pre {
+    margin-top: 0;
+}
+figcaption.shell-cap {
+    background: #2a2a2a;
+    color: #fff;
+}
+.file {
+    font-weight: bold;
+    border: unset;
+}
+pre > code {
+    display: block;
+    overflow: auto;
+    padding: 0.5em;
+    border: 1px solid #eee;
+    line-height: normal;
+}
+pre {
+    counter-reset: line;
+}
+pre .line:before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    padding-right: 1em;
+    width: 2em;
+    text-align: right;
+    color: #999;
+}
+th .line:before {
+    display: none;
+}
+h1:hover > a.hdr, h2:hover > a.hdr, h3:hover > a.hdr, h4:hover > a.hdr, h5:hover > a.hdr {
+    visibility: visible;
+}
